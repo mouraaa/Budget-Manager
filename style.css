@@ -1,0 +1,44 @@
+#options-page {
+	width:1000px;
+	margin:0 auto;
+}
+
+#total {
+	color:black;
+}
+
+#total-sign {
+	color:black;
+}
+
+#popup-limit {
+	color:red;
+}
+
+#limit-sign {
+	color:red;
+}
+
+#available-sign {
+	color:black;
+}
+
+#submit:hover:enabled {
+	color:green;
+}
+
+#remove-limit:hover:enabled {
+	color:red;
+}
+
+#save-limit:hover:enabled {
+	color:green;
+}
+
+#reset-total:hover:enabled {
+	color:green;
+}
+
+h1 {
+	color:green;
+}

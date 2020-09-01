@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget Manager</title>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="popup.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Budget Manager</h1>
+	<h2>Total Spent: <span id="total-sign">$</span><span id="total">0</span></h2> 
+	<h2>Limit: <span id="limit-sign">$<span id="popup-limit">0</span></h2>
+	<h2>Available:&nbsp;&nbsp; <span id="available-sign">$</span><span id="available">0</span></h2>
+	<h2>Over Limit: <span id="overlimit-sign">$</span><span id="over-limit">0</span></h2>
+	<h3>Enter Amount:</h3>
+	<input id="amount" type="number" placeholder="EX: 46.73"> <!-- only accepts number inputs -->
+	<br>
+	<br>
+	<input id="submit" type="submit" value="Spend" disabled> <!-- disables the button by default -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- NOTES:
+The <span> tag is an inline container used to mark up a part of a text
+
+-id total and id limit are both set to "0" which are being used as placeholders to be later changed to whatever the total and limit are set to 
+-as a result, the first time a user clicks the extension or the user removes total/limit, it would just show "Total: $0" and "Limit: $0"
+
+-you could have left them both blank or changed to anything by just removing the 0's and the first time a user clicks the extension, it would just show "Total: $" and "Limit: $"
+
+-->

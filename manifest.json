@@ -1,0 +1,27 @@
+{
+	"manifest_version":2, 
+	"name":"Shopping Tracker", 
+	"version":"1.0", 
+	"description":"Track your spending at the click of a button!", 
+	"icons": { 
+		"128": "/icons/icon128.png", 
+		"48":  "/icons/icon48.png",
+		"16":  "/icons/icon16.png"
+	},
+
+	"browser_action": { 
+		"default_icon": "/icons/icon16.png", 
+		"default_popup": "popup.html"
+	},
+
+	//any permissions that are needed are stated in here. brackets are used to indicate array of multiple items
+	"permissions": [ 
+		"storage" //allows us to use the chrome storage api
+	],
+	
+	//options page
+	"options_page": "options.html"
+}
+
+//Everything must receive a comma at the end except if in an array, the last item does not receive a comma, 
+//but the closing of the array does
